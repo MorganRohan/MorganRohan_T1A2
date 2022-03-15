@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,700;1,900&display=swap');
+/*Styling for the headings and body of any page, for any elements to remain consistent across all pages */
+html{
+  height: 100%;
+}
+body{
+    background-color: rgba(234, 233, 242, 0.9);
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Raleway';
+}
+h1{
+    color:black;
+    font-size: 80px;
+    display: flex;
+    font-weight: 900;
+    text-shadow: 2px 2px #76dec5;
+    padding: 10px;
+    justify-content: center;
+    text-align: justify;
+}
+h2{
+    color:black;
+    font-size: 50px;
+    display: flex;
+    font-weight: 900;
+    text-shadow: 2px 2px #76dec5;
+    padding: 5px;
+    justify-content: center;
+    text-align: justify;
+}
+h3{
+    color: black;
+    font-size: 45px;
+    display: flex;
+    font-weight: 700;
+    text-shadow: 2px 2px #76dec5;
+    padding: 5px;
+    justify-content: center;
+    text-align: justify;
+}
+h4{
+    color: black;
+    font-size: 30px;
+    display: flex;
+    padding: 5px;
+    font-weight: 700;
+    text-shadow: 2px 2px #76dec5;
+    justify-content: center;
+    text-align: justify;
+}
+h5{
+  color: black;
+    font-size: 25px;
+    display: flex;
+    padding: 5px;
+    font-weight: 700;
+    text-shadow: 2px 2px #76dec5;
+    justify-content: center;
+    text-align: justify;
+}
+h6{
+    color: black;
+    font-size: 15px;
+    display: flex;
+    padding: 5px;
+    font-weight: 700;
+    justify-content: center;
+    text-align: justify;
+}
+p{
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: justify;
+}
+ul{
+  color: black;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: justify;
+}
+/* Styling elements to remain consistent across all pages */
+.largenav{
+    font-family: 'Raleway', sans-serif;
+    display:flex;
+    justify-content: space-around;
+    color:#383073;
+    width: 100vw;
+}
+a{
+  transition: transform 0.3s;
+}
+a:link{
+  color: black;
+  text-decoration: none;
+}
+a:visited{
+  color: black;
+  text-decoration: none;
+}
+a:hover{
+  background-color: #76dec5;
+  text-decoration: underline;
+  transform: scale(1.3);
+}
+footer{
+    font-size: 15px;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+}
+/*Icons are to remain consistent across all pages and will link to the relevant sites with my profile */
+.flex-containericons{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 80px;
+  align-content: flex-end;
+  justify-content: center;
+}
+.flex-iconlinks{
+  display: flex;
+}
+.fa-brands{
+  display: flex;
+  font-size: 40px;
+  margin: 20px;
+}
+/*Styling for home page, main colours are black and white, with aquamarine and lilac accents and shadows. 
+Font is Raleway from Google Fonts */
+.flex-containerhome{
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 80px;
+  align-items: center;
+}
+.flex-headingshome{
+  height: 80vh;
+}
+/*Decided to style the text for this page differently to the other page headings to create a more floated style */
+#hi{
+  margin-top: 150px;
+  font-size: 40px;
+  font-weight: 300;
+  text-shadow: 2px 2px #76dec5;
+}
+#name{
+  font-size: 90px;
+  font-weight: 900;
+  text-shadow: 2px 2px #76dec5;
+}
+#dev{
+  font-size: 60px;
+  font-weight: 700;
+  text-shadow: 2px 2px #76dec5;
+}
+#desc{
+  font-size: 20px;
+  font-weight: 300;
+  width: 50vw;
+}
+.flex-headingshome{
+  padding: 10px;
+  margin: 30px;
+}
+.flex-imagehome{
+  margin: 20px;
+  padding: 20px;
+}
+.flex-imagehome > img{
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  margin: 40px;
+}
+@media (max-width: 1100px) {
+  .flex-containerhome {
+    flex-direction: column;
+    flex:100%;
+    margin-left: 20px;
+  }
+}
+/*Styling for About Me page - consistent colours and fonts from homepage*/
+.flex-containeraboutme {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.flex-textaboutmorgan{
+  background-color: #76dec5;
+  padding: 30px;
+  border: 10px;
+  margin: 20px;
+  flex: 40%;
+  height: fit-content;
+}
+.flex-textinterests{
+  background-color: #d2ceed;
+  padding: 30px;
+  border: 10px;
+  margin: 20px;
+  flex: 40%;
+  height: fit-content;
+}
+.flex-textaboutmorgan > h2{
+  color: white;
+  text-shadow: 2px 2px black;
+}
+.flex-containeraboutme > p{
+  font-size: 20px;
+  font-weight: 300;
+}
+.flex-imagesaboutme{
+  padding: 30px;
+  border: 30px;
+  margin: 20px;
+  flex: 15%;
+  align-items: center;
+}
+.flex-imagesaboutme >img{
+  width: 250px;
+  height:250px;
+}
+@media (max-width: 1100px) {
+  .flex-containeraboutme {
+    flex-direction: column;
+    flex:100%;
+  }
+}
+/*Styling for Work page - two flexboxes for conent as well as link to resume
+Two boxes to be in a row, but to stack into a column for smaller screen sizes */
+.flex-containerhistory {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.flex-workhistory {
+  background-color: #d2ceed;
+  padding: 20px;
+  border: 30px;
+  margin: 10px;
+  flex: 35%;
+  box-shadow: 3px 3px #ccc;
+  height: fit-content;
+}
+.flex-workhistory > h2{
+    color: black;
+    font-size: 50px;
+    text-shadow: 2px 2px #76dec5;
+    justify-items: center;
+}
+.flex-studyhistory {
+  background-color: #76dec5;
+  padding: 20px;
+  border: 30px;
+  margin: 10px;
+  flex: 35%;
+  box-shadow: 3px 3px #ccc;
+  height: fit-content;
+}
+.flex-studyhistory > h2{
+    color: white;
+    font-size: 50px;
+    text-shadow: 2px 2px black;
+    justify-items: center;
+}
+.flex-studyhistory > h4{
+  justify-items: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px black;
+  padding: 0px;
+}
+.flex-containerhistory > p{
+  justify-items: center;
+  text-justify: justify;
+}
+.flex-containerresume{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    height: 150px;
+    border: 2px solid black;
+    padding: 10px;
+}
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 1200px) {
+  .flex-containerhistory {
+    flex-direction: column;
+    flex:100%;
+  }
+}
+/*Styling for Blog page - consistent colours and font from previous pages*/
+.flex-containerblog {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.flex-containerblog > h2{
+  padding: 0px;
+  font-size: 45px;
+}
+.flex-blogpost1 {
+  background-color: #d2ceed;
+  padding: 30px;
+  border: 30px;
+  margin: 30px;
+  box-shadow: 3px 3px #ccc;
+  height: fit-content;
+  width: 300px;
+  transition: transform 0.3s;
+}
+.flex-blogpost1:hover{
+  transform: scale(1.3);
+}
+.flex-blogpost2 {
+  background-color: #76dec5;
+  padding: 30px;
+  border: 30px;
+  margin: 30px;
+  box-shadow: 3px 3px #ccc;
+  height: fit-content;
+  width: 300px;
+  transition: transform 0.5s;
+}
+.flex-blogpost2:hover{
+  transform: scale(1.3);
+}
+.flex-blogpost3 {
+  background-color: #d2ceed;
+  padding: 30px;
+  border: 30px;
+  margin: 30px;
+  box-shadow: 3px 3px #ccc;
+  height: fit-content;
+  width: 300px;
+  transition: transform 0.5s;
+}
+.flex-blogpost3:hover{
+  transform: scale(1.3);
+}
+.flex-blogpost4 {
+  background-color: #76dec5;
+  padding: 30px;
+  border: 30px;
+  margin: 30px;
+  box-shadow: 3px 3px #ccc;
+  height: fit-content;
+  width: 300px;
+  transition: transform 0.5s;
+}
+.flex-blogpost4:hover{
+  transform: scale(1.3);
+}
+.flex-blogpost5 {
+  background-color: #d2ceed;
+  padding: 30px;
+  border: 30px;
+  margin: 30px;
+  box-shadow: 3px 3px #ccc;
+  height: fit-content;
+  width: 300px;
+  transition: transform 0.5s;
+}
+.flex-blogpost5:hover{
+  transform: scale(1.3);
+}
+.placeholderimg{
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 800px) {
+  .flex-containerblog {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex:100%;
+  }
+}
+/*Styling for Individual blog posts pages, to remain constant across all the pages */
+/*Blog Page/Post 1*/
+.flex-containerblogpage{
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.flex-blogpage1{
+  background-color: #d2ceed;
+  padding: 30px;
+  border: 30px;
+  box-shadow: 3px 3px #ccc;
+  height: fit-content;
+  width: 80vw;
+}
+.placeholderimg{
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .flex-containerblogpage {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex:100%;
+  }
+}
+/*Blog Page/Post 2*/
+.flex-containerblogpage{
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.flex-blogpage2{
+  background-color: #d2ceed;
+  padding: 30px;
+  border: 30px;
+  box-shadow: 3px 3px #ccc;
+  height: fit-content;
+  width: 80vw;
+}
+.placeholderimg{
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .flex-containerblogpage {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex:100%;
+  }
+}
+/*Blog Page/Post 3*/
+.flex-containerblogpage{
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.flex-blogpage3{
+  background-color: #d2ceed;
+  padding: 30px;
+  border: 30px;
+  box-shadow: 3px 3px #ccc;
+  height: fit-content;
+  width: 80vw;
+}
+.placeholderimg{
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .flex-containerblogpage {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex:100%;
+  }
+}
+/*Blog Page/Post 4*/
+.flex-containerblogpage{
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.flex-blogpage4{
+  background-color: #d2ceed;
+  padding: 30px;
+  border: 30px;
+  box-shadow: 3px 3px #ccc;
+  height: fit-content;
+  width: 80vw;
+}
+.placeholderimg{
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .flex-containerblogpage {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex:100%;
+  }
+}
+/*Blog Page/Post 5*/
+.flex-containerblogpage{
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.flex-blogpage5{
+  background-color: #d2ceed;
+  padding: 30px;
+  border: 30px;
+  box-shadow: 3px 3px #ccc;
+  height: fit-content;
+  width: 80vw;
+}
+.placeholderimg{
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .flex-containerblogpage {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex:100%;
+  }
+}
+/*Styling for Contact Me page - consistent colours and font from previous pages*/
+.flex-containercontact {
+  display: flex;
+  flex-direction: row;
+}
+.flex-contactform{
+  background-color: #eae9f2;
+  padding: 30px;
+  border: 10px;
+  margin: 20px;
+  flex: 65%;
+}
+input[type=text], select {
+  width: 100%;
+  height: 60px;
+  font-size: 20px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#formname{
+  height: 60px;
+  font-size: 20px;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #76dec5;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: green;
+}
+
+.flex-contactemail{
+  padding: 30px;
+  border: 10px;
+  margin: 20px;
+  flex: 30%;
+}
+.flex-contactmap{
+    overflow:hidden;
+    padding-bottom:40%;
+    padding-left: 10%;
+    padding-right: 10%;
+    position:relative;
+    height:0;
+}
+.flex-contactmap iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    align-self: center;
+}
+@media (max-width: 1400px) {
+  .flex-containercontact {
+    flex-direction: column;
+    flex:100%;
+  }
+}
