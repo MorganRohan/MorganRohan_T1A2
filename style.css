@@ -289,6 +289,9 @@ Two boxes to be in a row, but to stack into a column for smaller screen sizes */
     border: 2px solid black;
     padding: 10px;
 }
+.flex-resumelink > a{
+  transition: transform 03.s;
+}
 /* Responsive layout - makes a one column layout instead of a two-column layout */
 @media (max-width: 1200px) {
   .flex-containerhistory {
