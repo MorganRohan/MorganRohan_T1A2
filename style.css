@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,700;1,900&display=swap');
 /*Styling for the headings and body of any page, for any elements to remain consistent across all pages */
+/*Use different header elements to specify how to style each of them, added shadow styling to some of the large ones to help stand out against the page */
+/* Keeping most text colours very monochromatic with mint and lilac shades to help supplement, keeping it very readable */
 html{
   height: 100%;
 }
@@ -88,6 +90,7 @@ ul{
     color:#383073;
     width: 100vw;
 }
+/* Adding hover element to highlight which link is being selected, along with a small scale up to better see the text */
 a{
   transition: transform 0.3s;
 }
@@ -129,7 +132,7 @@ footer{
   margin: 20px;
 }
 /*Styling for home page, main colours are black and white, with aquamarine and lilac accents and shadows. 
-Font is Raleway from Google Fonts */
+Font is Raleway from Google Fonts, chose a different font as a style choice but kept it simple to maintain readability */
 .flex-containerhome{
   width: 100vw;
   display: flex;
@@ -141,7 +144,7 @@ Font is Raleway from Google Fonts */
 .flex-headingshome{
   height: 80vh;
 }
-/*Decided to style the text for this page differently to the other page headings to create a more floated style */
+/*Decided to style the text for this page differently to the other page headings to create a more floated, centred style on the page */
 #hi{
   margin-top: 150px;
   font-size: 40px;
@@ -172,11 +175,13 @@ Font is Raleway from Google Fonts */
   padding: 20px;
 }
 .flex-imagehome > img{
-  width: 300px;
-  height: 300px;
+  height: 350px;
+  width: 270px;
   padding: 20px;
   margin: 40px;
+  border-radius: 2cm;
 }
+/*Media query to help increase responsiveness of page and ensure accessibility */
 @media (max-width: 1100px) {
   .flex-containerhome {
     flex-direction: column;
@@ -185,6 +190,7 @@ Font is Raleway from Google Fonts */
   }
 }
 /*Styling for About Me page - consistent colours and fonts from homepage*/
+/*As per wireframes, two large sections of text separated by a number of images to help balance the page */
 .flex-containeraboutme {
   margin: 20px;
   display: flex;
@@ -207,9 +213,13 @@ Font is Raleway from Google Fonts */
   flex: 40%;
   height: fit-content;
 }
+/*An example of a shadow added to a heading element to have definiton */
 .flex-textaboutmorgan > h2{
   color: white;
   text-shadow: 2px 2px black;
+}
+.flex-textaboutmorgan > p{
+  color: white; 
 }
 .flex-containeraboutme > p{
   font-size: 20px;
@@ -223,9 +233,11 @@ Font is Raleway from Google Fonts */
   align-items: center;
 }
 .flex-imagesaboutme >img{
-  width: 250px;
+  width: 200px;
   height:250px;
+  border-radius: 1cm;
 }
+/* Media query to help move content to a column format, with the sequence of text - image image image - text */
 @media (max-width: 1100px) {
   .flex-containeraboutme {
     flex-direction: column;
@@ -276,9 +288,11 @@ Two boxes to be in a row, but to stack into a column for smaller screen sizes */
   text-shadow: 2px 2px black;
   padding: 0px;
 }
+.flex-studyhistory > p{
+  color: white; 
+}
 .flex-containerhistory > p{
   justify-items: center;
-  text-justify: justify;
 }
 .flex-containerresume{
     display: flex;
@@ -289,10 +303,11 @@ Two boxes to be in a row, but to stack into a column for smaller screen sizes */
     border: 2px solid black;
     padding: 10px;
 }
+/* Link to resume*/
 .flex-resumelink > a{
-  transition: transform 03.s;
+  transition: transform 0.3s;
 }
-/* Responsive layout - makes a one column layout instead of a two-column layout */
+/* Responsive layout - makes a one column layout instead of a two-column layout, different width to previous pages due to content size and to create some variability */
 @media (max-width: 1200px) {
   .flex-containerhistory {
     flex-direction: column;
@@ -321,6 +336,7 @@ Two boxes to be in a row, but to stack into a column for smaller screen sizes */
   width: 300px;
   transition: transform 0.3s;
 }
+/*Additional hover element added to highlight the blog post being selected, but slower speed so as to not overwhelm the user when moving between selections */
 .flex-blogpost1:hover{
   transform: scale(1.3);
 }
@@ -382,6 +398,7 @@ Two boxes to be in a row, but to stack into a column for smaller screen sizes */
     align-items: center;
     justify-content: center;
 }
+/*Media query uses different width because the blog posts have a smaller width and make use of the row wrap feature to already adjust as screen is adjusted */
 @media (max-width: 800px) {
   .flex-containerblog {
     flex-direction: column;
@@ -532,6 +549,7 @@ Two boxes to be in a row, but to stack into a column for smaller screen sizes */
   margin: 20px;
   flex: 65%;
 }
+/* styling for the input boxes specifically */
 input[type=text], select {
   width: 100%;
   height: 60px;
@@ -547,7 +565,6 @@ input[type=text], select {
   height: 60px;
   font-size: 20px;
 }
-
 input[type=submit] {
   width: 100%;
   background-color: #76dec5;
@@ -558,11 +575,9 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 }
-
 input[type=submit]:hover {
   background-color: green;
 }
-
 .flex-contactemail{
   padding: 30px;
   border: 10px;
@@ -585,9 +600,13 @@ input[type=submit]:hover {
     position:absolute;
     align-self: center;
 }
+/*Media query at larger width to help with the resizing of elements like the form, which does need a minimum width of the page in order to see the name of the field and input box */
 @media (max-width: 1400px) {
   .flex-containercontact {
     flex-direction: column;
     flex:100%;
+  }
+  h3{
+    font-size: 20px;
   }
 }
